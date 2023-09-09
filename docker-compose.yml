@@ -1,16 +1,16 @@
-version: "3"
+version: '3'
 services:
   movie:
-    images: penchaldock/phonepaymovies:v1
+    image: penchaldock/phonepaymovies:v1
     ports: 
-       - "8000:80i"
+       - "8000:80"
     volumes:
       - volume1
     deploy:
       replicas: 4
 
   train:
-    images: penchaldock/phonepaytrains:v1
+    image: penchaldock/phonepaytrains:v1
     ports:
       - "8001:80"
     volumes:
@@ -19,7 +19,7 @@ services:
       replicas: 4
 
   loan:
-    images: penchaldock/phonepayloans:v1
+    image: penchaldock/phonepayloans:v1
     ports:
       - "8002:80"
     volumes:

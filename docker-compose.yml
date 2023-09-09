@@ -3,7 +3,7 @@ services:
   movie:
     image: penchaldock/phonepaymovies:v1
     ports: 
-       - "8000:80"
+      - "8000:80"
     volumes:
       - volume1
     deploy:
